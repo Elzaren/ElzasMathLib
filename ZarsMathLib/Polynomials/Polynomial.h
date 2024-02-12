@@ -11,6 +11,7 @@ class Polynomial {
   public:
     Polynomial(int length, term terms[]);
     int length(){};
+    
 
   private:
     int m_length = 0;
