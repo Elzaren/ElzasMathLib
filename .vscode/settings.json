@@ -2,6 +2,7 @@
     "files.associations": {
         "ostream": "cpp",
         "euclidesgcd": "cpp",
-        "gcd": "cpp"
+        "gcd": "cpp",
+        "random": "cpp"
     }
 }
