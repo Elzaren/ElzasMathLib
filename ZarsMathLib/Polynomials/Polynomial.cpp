@@ -17,11 +17,11 @@ void Polynomial::addTerm(int grade, int coeficent){
     else{
 
         Term* newTerms = new Term[m_length+1];
-        for(int c = 0; c<=m_length; c++){
+        for(int c = 0; c<m_length; c++){
             newTerms[c] = m_terms[c];
         }
-        newTerms[m_length+1].grade = grade;
-        newTerms[m_length+1].grade = coeficent;
+        newTerms[m_length].grade = grade;
+        newTerms[m_length].grade = coeficent;
         m_length+=1;
         delete[] m_terms;
         m_terms = newTerms;
@@ -30,7 +30,7 @@ void Polynomial::addTerm(int grade, int coeficent){
 
 
 Term Polynomial::getTerm(int grade){
-    for(int c = 0; c <= m_length; c++){
+    for(int c = 0; c <m_length; c++){
         if(m_terms[c].grade==grade){
             return m_terms[c];
         }

@@ -1,13 +1,12 @@
-#include "Vector3.h"
+#include "Polynomial.h"
 #include <iostream>
 using namespace std;
 
 int main(){
-
-    Vector3 a = {2,2,2};
-    cout<<a.x<<endl;
-    Vector3 b = a;
-    b.x = 5;
-    cout<<(a*b).x<<endl;
-    return 0;
+    Polynomial a;
+    a.addTerm(2,3);
+    a.addTerm(3,4);
+    cout<<a.getTerm(0).coeficent;
+    cout<<a.getTerm(2).coeficent;
+    cout<<a.getTerm(3).coeficent;
 }
